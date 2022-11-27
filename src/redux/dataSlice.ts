@@ -1,13 +1,18 @@
 import {createSlice} from "@reduxjs/toolkit";
-import {InitialStateType} from "./dataReducer";
+import {InitialStateType} from "../types/types";
+import uuid from "react-uuid";
 
 const dataSlice = createSlice({
     name: 'data',
-    initialState: <InitialStateType[]>[{
+    initialState: <InitialStateType[]>[
+        {
+        id: uuid(),
         article: 123124,
+        partName: 'support',
         carNumber: 'T123',
         description: 'qweqewqew',
         internalDescription: 'qweqewqew',
+        note: '',
         initialGuilty: 'Moscow',
         date: Date.now().toString(),
         status: 'В работе',
@@ -16,10 +21,163 @@ const dataSlice = createSlice({
         comment: 'nothing'
     },
         {
+            id: uuid(),
             article: 5134123,
             carNumber: 'J1233',
+            partName: 'wheel',
             description: 'xcvcxvh',
             internalDescription: 'jfjfj',
+            note: '',
+            initialGuilty: 'Minsk',
+            date: Date.now().toString(),
+            status: 'В работе',
+            finallyGuilty: 'Brest',
+            fineAmount: 55,
+            comment: 'nothing too'
+        },
+        {
+            id: uuid(),
+            article: 5134123,
+            carNumber: 'J1233',
+            partName: 'wheel',
+            description: 'xcvcxvh',
+            internalDescription: 'jfjfj',
+            note: '',
+            initialGuilty: 'Minsk',
+            date: Date.now().toString(),
+            status: 'В работе',
+            finallyGuilty: 'Brest',
+            fineAmount: 55,
+            comment: 'nothing too'
+        },
+        {
+            id: uuid(),
+            article: 5134123,
+            carNumber: 'J1233',
+            partName: 'wheel',
+            description: 'xcvcxvh',
+            internalDescription: 'jfjfj',
+            note: '',
+            initialGuilty: 'Minsk',
+            date: Date.now().toString(),
+            status: 'В работе',
+            finallyGuilty: 'Brest',
+            fineAmount: 55,
+            comment: 'nothing too'
+        },
+        {
+            id: uuid(),
+            article: 5134123,
+            carNumber: 'J1233',
+            partName: 'wheel',
+            description: 'xcvcxvh',
+            internalDescription: 'jfjfj',
+            note: '',
+            initialGuilty: 'Minsk',
+            date: Date.now().toString(),
+            status: 'В работе',
+            finallyGuilty: 'Brest',
+            fineAmount: 55,
+            comment: 'nothing too'
+        },
+        {
+            id: uuid(),
+            article: 5134123,
+            carNumber: 'J1233',
+            partName: 'wheel',
+            description: 'xcvcxvh',
+            internalDescription: 'jfjfj',
+            note: '',
+            initialGuilty: 'Minsk',
+            date: Date.now().toString(),
+            status: 'В работе',
+            finallyGuilty: 'Brest',
+            fineAmount: 55,
+            comment: 'nothing too'
+        },
+        {
+            id: uuid(),
+            article: 5134123,
+            carNumber: 'J1233',
+            partName: 'wheel',
+            description: 'xcvcxvh',
+            internalDescription: 'jfjfj',
+            note: '',
+            initialGuilty: 'Minsk',
+            date: Date.now().toString(),
+            status: 'В работе',
+            finallyGuilty: 'Brest',
+            fineAmount: 55,
+            comment: 'nothing too'
+        },
+        {
+            id: uuid(),
+            article: 5134123,
+            carNumber: 'J1233',
+            partName: 'wheel',
+            description: 'xcvcxvh',
+            internalDescription: 'jfjfj',
+            note: '',
+            initialGuilty: 'Minsk',
+            date: Date.now().toString(),
+            status: 'В работе',
+            finallyGuilty: 'Brest',
+            fineAmount: 55,
+            comment: 'nothing too'
+        },
+        {
+            id: uuid(),
+            article: 5134123,
+            carNumber: 'J1233',
+            partName: 'wheel',
+            description: 'xcvcxvh',
+            internalDescription: 'jfjfj',
+            note: '',
+            initialGuilty: 'Minsk',
+            date: Date.now().toString(),
+            status: 'В работе',
+            finallyGuilty: 'Brest',
+            fineAmount: 55,
+            comment: 'nothing too'
+        },
+        {
+            id: uuid(),
+            article: 5134123,
+            carNumber: 'J1233',
+            partName: 'wheel',
+            description: 'xcvcxvh',
+            internalDescription: 'jfjfj',
+            note: '',
+            initialGuilty: 'Minsk',
+            date: Date.now().toString(),
+            status: 'В работе',
+            finallyGuilty: 'Brest',
+            fineAmount: 55,
+            comment: 'nothing too'
+        },
+        {
+            id: uuid(),
+            article: 5134123,
+            carNumber: 'J1233',
+            partName: 'wheel',
+            description: 'xcvcxvh',
+            internalDescription: 'jfjfj',
+            note: '',
+            initialGuilty: 'Minsk',
+            date: Date.now().toString(),
+            status: 'В работе',
+            finallyGuilty: 'Brest',
+            fineAmount: 55,
+            comment: 'nothing too'
+        },
+        {
+            id: uuid(),
+            article: 5134123,
+            carNumber: 'J1233',
+            partName: 'wheel',
+            description: 'xcvcxvh',
+            internalDescription: 'jfjfj',
+            note: '',
             initialGuilty: 'Minsk',
             date: Date.now().toString(),
             status: 'В работе',
@@ -32,7 +190,7 @@ const dataSlice = createSlice({
             state.push(action.payload)
         },
         deleteCurrentPenalty(state, action) {
-            state.filter(s => s.id !== action.payload)
+            return state.filter(s => s.id !== action.payload)
         }
     }
 

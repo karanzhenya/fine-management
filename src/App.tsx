@@ -1,29 +1,20 @@
 import React from 'react';
-import {useDispatch, useSelector} from "react-redux";
-import {InitialStateType} from "./redux/dataReducer";
+import {useSelector} from "react-redux";
 import {RootStateType} from "./redux/redux";
-import {useAppDispatch} from "./hooks/hooks";
+import {InitialStateType} from "./types/types";
+import DataTable from "./components/DataTable";
+import Paper from "@mui/material/Paper/Paper";
+import Header from "./components/Header";
 
-function App() {
-
-    const penaltyData: InitialStateType[] = useSelector<RootStateType, InitialStateType[]>(state => state.data)
-    const dispatch = useAppDispatch();
-    console.log(penaltyData)
+export default function App() {
+    const fineData: InitialStateType[] = useSelector<RootStateType, InitialStateType[]>(state => state.data)
     return (
-        <div className="App">
-            {penaltyData && penaltyData.map((p: InitialStateType) => {
-                    return <div>
-                        <ul>
-                            <li>{p.article}</li>
-                            <li>{p.carNumber}</li>
-                            <li>{p.description}</li>
-                            <li>{p.fineAmount}</li>
-                        </ul>
-                    </div>
-                }
-            )}
-        </div>
+        <>
+            <Header/>
+            <Paper elevation={3} style={{marginTop: '10px'}}>
+                <DataTable fineData={fineData}/>
+            </Paper>
+
+        </>
     );
 }
-
-export default App;
