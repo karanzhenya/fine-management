@@ -13,7 +13,3 @@ export type InitialStateType = {
     fineAmount: number
     comment: string
 }
-
-export type DataTablePropsType = {
-    fineData: InitialStateType[]
-}
