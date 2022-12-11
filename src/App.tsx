@@ -2,7 +2,6 @@ import React from 'react';
 import DataTable from "./components/DataTable";
 import Paper from "@mui/material/Paper/Paper";
 import Header from "./components/Header";
-import BackdropForm from "./components/BackdropForm";
 
 export default function App() {
     return (
@@ -11,7 +10,6 @@ export default function App() {
             <Paper elevation={3} style={{marginTop: '10px'}}>
                 <DataTable/>
             </Paper>
-            <BackdropForm/>
         </>
     );
 }
