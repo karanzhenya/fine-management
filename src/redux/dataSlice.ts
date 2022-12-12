@@ -4,22 +4,21 @@ import uuid from "react-uuid";
 
 const dataSlice = createSlice({
     name: 'data',
-    initialState: <InitialStateType[]>[
+    initialState: [
         {
-        id: uuid(),
-        article: 123124,
-        partName: 'support',
-        carNumber: 'T123',
-        description: 'qweqewqew',
-        internalDescription: 'qweqewqew',
-        note: '',
-        initialGuilty: 'Moscow',
-        date: Date.now().toString(),
-        status: 'В работе',
-        finallyGuilty: 'Voronezh',
-        fineAmount: 35,
-        comment: 'nothing'
-    },
+            id: uuid(),
+            article: 123124,
+            partName: 'support',
+            carNumber: 'T123',
+            description: 'qweqewqew',
+            internalDescription: 'qweqewqew',
+            date: '12.12.2022 23:34',
+            initialGuilty: 'Moscow',
+            status: 'В работе',
+            finallyGuilty: 'Voronezh',
+            fineAmount: 35,
+            comment: 'nothing'
+        } as InitialStateType,
         {
             id: uuid(),
             article: 5134123,
@@ -27,14 +26,13 @@ const dataSlice = createSlice({
             partName: 'wheel',
             description: 'xcvcxvh',
             internalDescription: 'jfjfj',
-            note: '',
-            initialGuilty: 'Minsk',
             date: Date.now().toString(),
+            initialGuilty: 'Minsk',
             status: 'В работе',
             finallyGuilty: 'Brest',
             fineAmount: 55,
             comment: 'nothing too'
-        },
+        } as InitialStateType,
         {
             id: uuid(),
             article: 5134123,
@@ -42,14 +40,13 @@ const dataSlice = createSlice({
             partName: 'wheel',
             description: 'xcvcxvh',
             internalDescription: 'jfjfj',
-            note: '',
-            initialGuilty: 'Minsk',
             date: Date.now().toString(),
+            initialGuilty: 'Minsk',
             status: 'В работе',
             finallyGuilty: 'Brest',
             fineAmount: 55,
             comment: 'nothing too'
-        },
+        } as InitialStateType,
         {
             id: uuid(),
             article: 5134123,
@@ -57,14 +54,13 @@ const dataSlice = createSlice({
             partName: 'wheel',
             description: 'xcvcxvh',
             internalDescription: 'jfjfj',
-            note: '',
-            initialGuilty: 'Minsk',
             date: Date.now().toString(),
+            initialGuilty: 'Minsk',
             status: 'В работе',
             finallyGuilty: 'Brest',
             fineAmount: 55,
             comment: 'nothing too'
-        },
+        } as InitialStateType,
         {
             id: uuid(),
             article: 5134123,
@@ -72,14 +68,13 @@ const dataSlice = createSlice({
             partName: 'wheel',
             description: 'xcvcxvh',
             internalDescription: 'jfjfj',
-            note: '',
-            initialGuilty: 'Minsk',
             date: Date.now().toString(),
+            initialGuilty: 'Minsk',
             status: 'В работе',
             finallyGuilty: 'Brest',
             fineAmount: 55,
             comment: 'nothing too'
-        },
+        } as InitialStateType,
         {
             id: uuid(),
             article: 5134123,
@@ -87,14 +82,13 @@ const dataSlice = createSlice({
             partName: 'wheel',
             description: 'xcvcxvh',
             internalDescription: 'jfjfj',
-            note: '',
-            initialGuilty: 'Minsk',
             date: Date.now().toString(),
+            initialGuilty: 'Minsk',
             status: 'В работе',
             finallyGuilty: 'Brest',
             fineAmount: 55,
             comment: 'nothing too'
-        },
+        } as InitialStateType,
         {
             id: uuid(),
             article: 5134123,
@@ -102,14 +96,13 @@ const dataSlice = createSlice({
             partName: 'wheel',
             description: 'xcvcxvh',
             internalDescription: 'jfjfj',
-            note: '',
-            initialGuilty: 'Minsk',
             date: Date.now().toString(),
+            initialGuilty: 'Minsk',
             status: 'В работе',
             finallyGuilty: 'Brest',
             fineAmount: 55,
             comment: 'nothing too'
-        },
+        } as InitialStateType,
         {
             id: uuid(),
             article: 5134123,
@@ -117,14 +110,13 @@ const dataSlice = createSlice({
             partName: 'wheel',
             description: 'xcvcxvh',
             internalDescription: 'jfjfj',
-            note: '',
-            initialGuilty: 'Minsk',
             date: Date.now().toString(),
+            initialGuilty: 'Minsk',
             status: 'В работе',
             finallyGuilty: 'Brest',
             fineAmount: 55,
             comment: 'nothing too'
-        },
+        } as InitialStateType,
         {
             id: uuid(),
             article: 5134123,
@@ -132,14 +124,13 @@ const dataSlice = createSlice({
             partName: 'wheel',
             description: 'xcvcxvh',
             internalDescription: 'jfjfj',
-            note: '',
-            initialGuilty: 'Minsk',
             date: Date.now().toString(),
+            initialGuilty: 'Minsk',
             status: 'В работе',
             finallyGuilty: 'Brest',
             fineAmount: 55,
             comment: 'nothing too'
-        },
+        } as InitialStateType,
         {
             id: uuid(),
             article: 5134123,
@@ -147,14 +138,13 @@ const dataSlice = createSlice({
             partName: 'wheel',
             description: 'xcvcxvh',
             internalDescription: 'jfjfj',
-            note: '',
-            initialGuilty: 'Minsk',
             date: Date.now().toString(),
+            initialGuilty: 'Minsk',
             status: 'В работе',
             finallyGuilty: 'Brest',
             fineAmount: 55,
             comment: 'nothing too'
-        },
+        } as InitialStateType,
         {
             id: uuid(),
             article: 5134123,
@@ -162,14 +152,13 @@ const dataSlice = createSlice({
             partName: 'wheel',
             description: 'xcvcxvh',
             internalDescription: 'jfjfj',
-            note: '',
-            initialGuilty: 'Minsk',
             date: Date.now().toString(),
+            initialGuilty: 'Minsk',
             status: 'В работе',
             finallyGuilty: 'Brest',
             fineAmount: 55,
             comment: 'nothing too'
-        },
+        } as InitialStateType,
         {
             id: uuid(),
             article: 5134123,
@@ -177,14 +166,13 @@ const dataSlice = createSlice({
             partName: 'wheel',
             description: 'xcvcxvh',
             internalDescription: 'jfjfj',
-            note: '',
-            initialGuilty: 'Minsk',
             date: Date.now().toString(),
+            initialGuilty: 'Minsk',
             status: 'В работе',
             finallyGuilty: 'Brest',
             fineAmount: 55,
             comment: 'nothing too'
-        }],
+        } as InitialStateType],
     reducers: {
         addNewPenalty(state, action) {
             state.push(action.payload)

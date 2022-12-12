@@ -7,7 +7,6 @@ export type InitialStateType = {
     carNumber: string
     description: string
     internalDescription: string
-    note: string
     initialGuilty: string
     date: string
     status: 'Решено' | 'В работе'

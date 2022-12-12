@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography/Typography";
 import IconButton from "@mui/material/IconButton/IconButton";
 import MenuIcon from '@mui/icons-material/Menu';
 import Button from "@mui/material/Button/Button";
+import Menu from "./Menu";
 
 export default function Header() {
     return (
@@ -16,7 +17,7 @@ export default function Header() {
                         color="inherit"
                         aria-label="menu"
                     >
-                        <MenuIcon/>
+                        <Menu/>
                     </IconButton>
                     <Typography variant={"h5"} sx={{flexGrow: 1}}>
                         Motorland
